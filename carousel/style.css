@@ -1,5 +1,121 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(
+    1.5
+  ); /* Proporção com o valor original da imagem, ampliando ela para todos os lados */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.carousel {
+  width: 800px;
+  margin: 100px auto;
+  background-color: #087f5b;
+  border-radius: 8px;
+  color: #fff;
+
+  padding: 32px 48px 32px 86px; /* Espaçamento para puxar a imagem ampliada para dentro */
+
+  display: flex;
+  align-items: center;
+  gap: 85px;
+
+  position: relative; /* Escolhendo o elemento que será pai dos absolutes */
+}
+
+.testimonial-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  margin-bottom: 32px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  color: #c6f7e8;
+}
+
+.testimonial-job {
+  font-size: 12px;
+  color: #c6f7e8;
+}
+
+/* Controles */
+
+.btn {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border: none;
+  position: absolute; /* Removendo o elemento do fluxo da página */
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+}
+
+.btn--left {
+  left: -20px;
+  /* 
+  em relação ao parent
+  top: 50%;
+  em relação ao elemento
+  transform: translate(0, -50%);
+  Outra forma de centralizar os botões, se o flex não estivesse ativo*/
+}
+
+.btn--right {
+  right: -20px;
+  /* 
+  em relação ao parent
+  top: 50%;
+  em relação ao elemento
+  transform: translate(0, -50%);
+  Outra forma de centralizar os botões, se o flex não estivesse ativo*/
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
+
+/* Bolinhas */
+
+.dots {
+  position: absolute; /* Removendo o elemento do fluxo da página */
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+
+  background-color: #fff;
+
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #087f5b;
 }

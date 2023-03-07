@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Carousel</title>
 
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="./imagens/maria.jpg" alt="Maria" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          vel odio tellus. Vivamus sapien nulla, fringilla id pharetra at,
+          elementum in tellus."
+        </p>
+        <p class="testimonial-author">Maria de Almeida</p>
+        <p class="testimonial-job">Product Manager</p>
+      </blockquote>
 
-    
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          class="btn-icon"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
 
-</body>
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          class="btn-icon"
+          viewBox="0 0 24 24"
+          strokeWidth="{1.5}"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+
+      <div class="dots">
+        <button class="dot dot--fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
 </html>
