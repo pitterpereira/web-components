@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  width: 800px;
+  margin: 100px auto 0 auto;
+
+  font-size: 18px;
+
+  border: 1px solid black;
+  border-collapse: collapse; /* Junta 2 bordas próximas */
+}
+
+th,
+td {
+  /* border: 1px solid black; */
+  padding: 16px 24px;
+  text-align: left;
+}
+
+thead th {
+  width: 25%;
+  background-color: #087f5b;
+  color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(233, 230, 230);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(247, 247, 247);
+}
