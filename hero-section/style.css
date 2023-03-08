@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: "Rubik", sans-serif;
+    color: #444;
+}
+
+.container {
+    margin: 0 auto;
+    width: 800px;/*1200px*/
+}
+
+header {
+    height: 100vh; /* 100% da viewport disponível */
+}
+
+nav {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 44px;
+    margin-bottom: 48px;;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.btn:link, .btn:visited {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e67e22;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block; /* É inline por default. Tem que colocar como inline-block para colocar padding */
+    padding: 16px 32px;
+    border-radius: 9px;
+}
+
+section {
+    padding: 96px 0;
+}
