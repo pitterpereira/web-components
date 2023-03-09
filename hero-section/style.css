@@ -9,25 +9,57 @@ html {
     color: #444;
 }
 
+.header-container {
+    width: 1200px;
+    position: absolute;
+
+    /* Em relação ao tamanho do parent */
+    left: 50%;
+    top: 50%;
+
+    /* Em relação ao tamanho do elemento */
+    transform: translate(-50%, -50%);
+  }
+
+  .header-container-inner {
+    width: 50%;
+  }
+
 .container {
     margin: 0 auto;
-    width: 800px;/*1200px*/
+    width: 1200px;
 }
 
 header {
-    height: 100vh; /* 100% da viewport disponível */
-}
+    height: 100vh;
+    
+    position: relative; /* Setando o container da posição absoluta */
+
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.6),
+        rgba(34, 34, 34, 0.6)
+      ),
+      url(./imagens/hero.jpg); /* Imagem com uma camada escura para a legenda */
+
+    background-size: cover; /* Cobrir a tela */
+
+    color: #fff;
+  }
 
 nav {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
+
     display: flex;
     justify-content: space-between;
-}
+    
+    padding-top: 32px;
+  }
 
 h1 {
     font-size: 52px;
     margin-bottom: 32px;
+    line-height: 1.05;
 }
 
 h2 {
@@ -54,4 +86,5 @@ p {
 
 section {
     padding: 96px 0;
-}
+    background-color: #f7f7f7;
+  }
