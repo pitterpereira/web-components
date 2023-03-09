@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    font-family: sans-serif;
+    color: #343a40;
+    font-size: 24px;
+
+    text-align: center;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 80px 400px 1fr 250px; /* 1fr ocupa o espaço disponível */
+    grid-template-rows: 80px 1fr;
+}
+
+nav, section, main, aside {
+    padding-top: 24px;
+}
+
+nav {
+    background-color: #343a40;
+    color: #fff;
+
+    grid-row: 1 / -1; /* Ocupa a coluna inteira */
+}
+
+menu {
+    background-color: #7048e8;
+    color: #fff;
+    grid-column: 2 / -1; /* Ocupa a linha inteira, a partir da segunda posição */
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 40px;
+}
+
+button {
+    display: inline-block;
+
+    padding: 8px 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    background-color: #5f3dc4;
+
+    border: none;
+
+    cursor: pointer;
+
+    color: #fff;
+}
+
+button:last-child {
+    margin-left: auto; /* Faz o elemento ficar na extrema borda à direita */
+    background-color: red;
+}
+
+section {
+    background-color: #e9ecef;
+    padding: 40px;
+
+    overflow: scroll;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.email {
+    height: 96px;
+    background-color: #adb5bd;
+
+    display: flex; /* Flexbox trata texto como flex items */
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Evita que as caixas sejam comprimidas verticalmente pelo overflow: scroll */
+}
+
+aside {
+    background-color: #e9ecef;
+}
